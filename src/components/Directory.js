@@ -4,6 +4,7 @@ class Directory extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      // campsites is an array of objects.
       campsites: [
         {
           id: 0,
@@ -42,8 +43,10 @@ class Directory extends Component {
   }
 
   render() {
+    // directory is a variable that is set to an array of objects. They are special types of objects that React knows how to render. Uncomment the console.log below to see what they look like.
     const directory = this.state.campsites.map((campsite) => {
       return (
+        // the key attribute is added to help React keep track of the items it renders. The properties: id, image, name and description come from the properties each object has in the state. Remember, campsites is an array of objects.
         <div key={campsite.id} className="col">
           <img src={campsite.image} alt={campsite.name} />
           <h2>{campsite.name}</h2>
@@ -51,8 +54,9 @@ class Directory extends Component {
         </div>
       );
     });
-
+    //console.log(directory);
     return (
+      // the directory below is the directory variable above. It's an array of JSX elements so React knows what to do with them.
       <div className="container">
         <div className="row">{directory}</div>
       </div>
