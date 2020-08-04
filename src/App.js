@@ -1,10 +1,17 @@
 import React, { Component } from "react";
 import { Navbar, NavbarBrand } from "reactstrap";
 import "./App.css";
-// Below is the import statement that tells the App component about the Directory component
 import Directory from "./components/Directory";
 
+import { CAMPSITES } from "./shared/campsites";
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      campsites: CAMPSITES,
+    };
+  }
+
   render() {
     return (
       <div className="App">
@@ -14,7 +21,7 @@ class App extends Component {
           </div>
         </Navbar>
         {/* Below is where the Directory component gets rendered */}
-        <Directory />
+        <Directory campsites={this.state.campsites} />
       </div>
     );
   }

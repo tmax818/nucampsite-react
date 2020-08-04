@@ -19,3 +19,18 @@ $ npm i bootstrap@4.0.0 reactstrap@5.0.0 react-popper@0.9.2
 
 - Download [images](public/assets/images/)
 - Create a [components](src/components) with a [Directory.js](src/components/Directory.js)
+
+## React Components Part 2
+
+- Download [campsites.js](src/shared/campsites.js)
+- Update [Directory.js](src/components/Directory.js)
+- Update [App.js](src/App.js)
+
+- Add fonts and styles
+
+```bash
+$ npm i typeface-lobster typeface-open-sans
+```
+
+- Update [index.js](src/index.js)
+- Update [App.css](src/App.css)
