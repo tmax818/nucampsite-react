@@ -38,3 +38,4 @@ $ npm i typeface-lobster typeface-open-sans
 ## Workshop Task 1
 
 - Add [CampsiteInfo.js](src/components/CampsiteInfo.js)
+- Update [Directory.js](src/components/Directory.js)

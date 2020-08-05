@@ -9,6 +9,8 @@ import {
   CardTitle,
 } from "reactstrap";
 
+import CampsiteInfo from "./CampsiteInfo";
+
 class Directory extends Component {
   //this is the new constructor. We moved state up to the App component
   constructor(props) {
@@ -65,13 +67,7 @@ class Directory extends Component {
     return (
       <div className="container">
         <div className="row">{directory}</div>
-        {/* add below */}
-        <div className="row">
-          <div className="col-md-5 m-1">
-            {this.renderSelectedCampsite(this.state.selectedCampsite)}
-          </div>
-          {/* add above */}
-        </div>
+        <CampsiteInfo campsite={this.state.selectedCampsite} />
       </div>
     );
   }
