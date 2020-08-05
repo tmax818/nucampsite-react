@@ -17,12 +17,12 @@ class Directory extends Component {
       selectedCampsite: null,
     };
   }
-  // add this
+  // Add this to handle when a campsite is clicked.
   onCampsiteSelect(campsite) {
     this.setState({ selectedCampsite: campsite });
   }
 
-  // what does this do?
+  // What does this do? Make sure you understand what is happening.
   renderSelectedCampsite(campsite) {
     if (campsite) {
       return (

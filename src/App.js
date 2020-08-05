@@ -20,7 +20,6 @@ class App extends Component {
             <NavbarBrand href="/">NuCamp</NavbarBrand>
           </div>
         </Navbar>
-        {/* Below is where the Directory component gets rendered */}
         <Directory campsites={this.state.campsites} />
       </div>
     );
