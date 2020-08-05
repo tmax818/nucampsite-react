@@ -34,3 +34,7 @@ $ npm i typeface-lobster typeface-open-sans
 
 - Update [index.js](src/index.js)
 - Update [App.css](src/App.css)
+
+## Workshop Task 1
+
+- Add [CampsiteInfo.js](src/components/CampsiteInfo.js)
